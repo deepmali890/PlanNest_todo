@@ -74,7 +74,7 @@ exports.updateTodo = async (req, res) => {
             success: true,
         });
 
-
+        
     } catch (error) {
         console.error("Error updating item:", error);
         return res.status(500).json({
