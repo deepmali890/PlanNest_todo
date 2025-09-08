@@ -16,7 +16,7 @@ const userRoutes = require('./src/routes/user.routes');
 const app = express();
 
 const corsOptions = {
-    origin: ['http://localhost:5173', "https://plannest.netlify.app/"],
+    origin: ["https://plannest.netlify.app/"],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
