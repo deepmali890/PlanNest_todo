@@ -16,14 +16,14 @@ const userRoutes = require('./src/routes/user.routes');
 const app = express();
 
 const corsOptions = {
-    origin: ["https://plannest.netlify.app/"],
+    origin: 'https://plannest.netlify.app',
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
 app.use(cors(corsOptions));
-
+app.options('*', cors(corsOptions));
 
 // Middleware
 app.use(express.json());
