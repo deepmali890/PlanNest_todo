@@ -5,6 +5,8 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const authRoutes = require('./src/routes/auth.routes')
 const todoRoutes = require('./src/routes/todo.routes');
+const userRoutes = require('./src/routes/user.routes');
+
 
 
 
